@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh"  content="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.jpeg" />
+    <title>Togo-host</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="banner">
+        <img src="images/logo.jpeg" alt="" class="logo">
+       <div class="banner-text">
+            <h1>Togo-host</h1>
+            <p>Votre repos, notre devoir</p>
+            <div class="banner-btn">
+                <a href="#"><span></span>Réserver</a>
+                <a href="#footer"><span></span>En savoir plus</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="sidenav">
+        <div id="menuBtn">
+            <img src="images/menu.png"alt="" class="salon">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#Témoignages">Témoignages</a></li>
+                <li><a href="#Contact">Contactez-nous</a></li>
+            </ul>
+            
+            <li class="hi"><a href="Connexion.php" target="_top">Connectez-vous</a></li>
+        </nav>
+
+        <script>
+            var menuBtn = document.getElementById("menuBtn")
+            var sidenav = document.getElementById("sidenav")
+            var menu = document.getElementById("menu")
+
+            sidenav.style.right ="-250px"
+
+    menuBtn.onclick = function(){
+    if(sidenav.style.right == "-250px"){
+        sidenav.style.right = "0";
+        menu.src = "images/close.png"
+    }
+    else{
+        sidenav.style.right = "-250px";
+       menu.src = "images/menu.png"
+    
+    }
+}
+    </script>
+    </div>
+
+   
+    <!--Témoignages-->
+   <section id="Témoignages">
+      <div class="title-text">
+          <p>TEMOIGNAGES</p>
+          <h1>Découvrez ce que disent nos clients</h1>
+      </div>
+
+      <div class="testimonial-row">
+        <div class="tesmonial-col">
+            <div class="user">
+                <img src="images/man1.jfif" class="img-responsive"  style="width: 50%; border-radius: 70px;" alt="">
+                <div class="user-info">
+                    <h4>Nana</h4>
+                    <small>@nana</small>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, quo. Sit exercitationem fugit enim ex omnis ad aliquam rerum tempora,
+                 odio, similique officiis voluptas quod nobis animi quis nisi ullam?</p>
+        </div>
+        <div class="tesmonial-col">
+            <div class="user">
+                <img src="images/user.jpeg" class="img-responsive"  style="width: 50%;" alt="">
+                <div class="user-info">
+                    <h4>Nana</h4>
+                    <small>@nana</small>
+                </div>
+            </div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa asperiores, in magnam quas numquam reiciendis
+             laborum excepturi fuga voluptates necessitatibus amet perferendis eius explicabo iusto rerum rem vitae vero quam?</p>
+        </div>
+        <div class="tesmonial-col">
+            <div class="user">
+                <img src="images/user.jpeg" class="img-responsive"  style="width: 50%;" alt="">
+                <div class="user-info">
+                    <h4>Nana</h4>
+                    <small>@nana</small>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptates et a repudiandae vero quam 
+                suscipit temporibus voluptatem hic, pariatur totam nam cumque provident quisquam dolorem tempora, quia expedita nesciunt.</p>
+        </div>
+      </div>
+   </section>
+
+   <!--footer-->
+  <section id="footer">
+    <footer class="footer-distributed"  id="Contactez-nous">
+
+        <div class="footer-left">
+    
+         <img src="images/logo.jpeg" alt=""  class="logo">
+    
+         <p class="footer-links">
+         <a href="#" class="link-1">accueil</a>
+       
+         <a href="#">Pricing</a>
+       
+         <a href="#">About</a>
+         
+         <a href="#">Faq</a>
+         
+         <a href="#">Contactez-nous</a>
+         </p>
+    
+        </div>
+    
+       <div class="footer-center">
+    
+          <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Quelque part à Lome</span> Adresse</p>
+           </div>
+    
+         <div>
+          <i class="fa fa-phone"></i>
+          <p>+228........</p>
+         </div>
+    
+       <div>
+         <i class="fa fa-envelope"></i>
+         <p><a href="#">togohost@company.com</a></p>
+       </div>
+    
+        </div>
+    
+       <div class="footer-right">
+    
+         
+        <section id="About">
+    
+         <p class="footer-company-about">
+          <span>About the company</span>
+            Nous sommes à Lomé. Rejoignez nous pour de bons moments!
+         </p>
+    
+        <div class="footer-icons">
+    
+          <a href="#"><i class="fa fa-facebook"></i></a>
+    
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+    
+        </div>
+    
+       </section>
+    
+       </div>
+       <div class="copyright">
+         <p>  togohost  <!--© alt+0169-->&copy; 2024-<?php echo date("Y");?>by @Fana&Souhad </p>
+       </div>
+     
+    
+     </footer>
+  </section>
+</body>
+</html>
